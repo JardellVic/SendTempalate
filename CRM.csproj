@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	  <AssemblyVersion>1.0.2</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Conexoes\**" />
+    <EmbeddedResource Remove="Conexoes\**" />
+    <None Remove="Conexoes\**" />
+    <Page Remove="Conexoes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controls\backWhats.jpg" />
+    <None Remove="Controls\botao-reproduzir.png" />
+    <None Remove="Controls\excel.png" />
+    <None Remove="Controls\pare.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.1" />
+    <PackageReference Include="EPPlus" Version="7.4.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Npgsql" Version="8.0.4" />
+    <PackageReference Include="OfficeOpenXml.Core.ExcelPackage" Version="1.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Controls\backWhats.jpg" />
+    <Resource Include="Controls\botao-reproduzir.png" />
+    <Resource Include="Controls\excel.png" />
+    <Resource Include="Controls\pare.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="CRM.Controls.Disparo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRM.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1030" Background="#FF1A1A1A">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="cmbTemplates" HorizontalAlignment="Center" VerticalAlignment="Center" Width="749" Height="28" Grid.Row="1"/>
+
+        <Border x:Name="borderBackMensagem" BorderBrush="Black" BorderThickness="1" Grid.Row="2" Margin="5">
+            <Border.Background>
+                <ImageBrush ImageSource="/Controls/backWhats.jpg" TileMode="None" Stretch="UniformToFill"/>
+            </Border.Background>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="1">
+                <TextBlock x:Name="txtTemplate" TextWrapping="Wrap" Text="" Margin="9" FontSize="18" FontFamily="Bahnschrift" Foreground="White"/>
+            </ScrollViewer>
+        </Border>
+
+        <Grid Grid.Row="4" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ScrollViewer x:Name="scrollViewerConsole" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Column="0">
+                <TextBlock x:Name="txtBlockConsole" TextWrapping="Wrap" Background="#FF1F1E1E" Foreground="White"/>
+            </ScrollViewer>
+
+            <ScrollViewer x:Name="scrollViewerConsoleT" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Column="2">
+                <TextBlock x:Name="txtBlockConsoleResponse" TextWrapping="Wrap" Background="#FF1F1E1E" Foreground="White"/>
+            </ScrollViewer>
+
+        </Grid>
+
+        <Grid Grid.Row="5" Height="66">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="45"/>
+                <ColumnDefinition Width="45"/>
+            </Grid.ColumnDefinitions>
+            <ProgressBar x:Name="progressDisparo" Height="37" Grid.Column="0" Margin="5,0"/>
+            <Button x:Name="btnEnviarDisparo" Grid.Column="1" Height="37" Width="37" Click="btnEnviarDisparo_Click" BorderBrush="#FF191919" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Controls/botao-reproduzir.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnPareDisparo" Grid.Column="2" Height="37" Width="37" Click="btnPareDisparo_Click" BorderBrush="#FF191919">
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Controls/pare.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+        <StatusBar Margin="0,0,0,0" Background="#FF212121" VerticalAlignment="Bottom" Height="40" Foreground="White">
+            <StatusBarItem x:Name="statusContatos" Margin="0,0,150,0">
+                <TextBlock x:Name="statusContatosText" Text="Quantidade de contatos:" Foreground="White"/>
+            </StatusBarItem>
+            <StatusBarItem x:Name="statusUtility" Margin="0,0,150,0">
+                <TextBlock x:Name="statusUtilityText" Text="Valor Utility:" Foreground="White"/>
+            </StatusBarItem>
+            <StatusBarItem x:Name="statusMarketing" Margin="0,0,120,0">
+                <TextBlock x:Name="statusMarketingText" Text="Valor Marketing:" Foreground="White"/>
+            </StatusBarItem>
+            <StatusBarItem x:Name="statusTempo">
+                <TextBlock x:Name="statusTempoText" Text="Tempo Médio:" Foreground="White"/>
+            </StatusBarItem>
+        </StatusBar>
+        <Grid Grid.Row="3" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="SelectFileButton" Content="Selecionar Arquivo" Height="24" Click="SelectFileButton_Click" Grid.Column="0" VerticalAlignment="Center" Margin="10,0,10,0"/>
+            <TextBox Name="FilePathTextBox" Height="24" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Grid.Column="1" VerticalAlignment="Center"/>
+        </Grid>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="CRM.Controls.Inicio"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRM.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="#FF1A1A1A">
+    <Grid>
+        <GroupBox x:Name="grpAnalises" Header="Inicio" Foreground="White">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+                <!-- Definindo as linhas e colunas do Grid -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" MinHeight="100"/>
+                    <RowDefinition Height="Auto" MinHeight="100"/>
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="161"/>
+                    <ColumnDefinition Width="144"/>
+                    <ColumnDefinition Width="135"/>
+                    <ColumnDefinition Width="120"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Linha 1 -->
+                <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" Margin="5,5,5,5" VerticalAlignment="Center">
+                    <TextBlock x:Name="lblGerarAntiparasitario" Text="Gerar Anti-Parasitário:" Foreground="White"/>
+                    <TextBlock x:Name="txtVeriAntiparasitario" Text="Verificar Anti-Parasitário:" Foreground="White"/>
+                    <Button x:Name="vrfcAntiparasitario" Content="Verificar" Width="151" Height="25" HorizontalAlignment="Left" Click="vrfcAntiparasitario_Click" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" Margin="5,5,5,5" VerticalAlignment="Center">
+                    <TextBlock x:Name="lblGerarSuplmento" Text="Gerar Suplemento:" Foreground="White"/>
+                    <TextBlock x:Name="txtVeriSuplemento" Text="Verificar Suplemento:" Foreground="White"/>
+                    <Button x:Name="vrfcSuplemento" Content="Verificar" Width="130" Height="25" Click="vrfcSuplemento_Click" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Vertical" Margin="5,5,5,5" VerticalAlignment="Center">
+                    <TextBlock x:Name="lblGerarVermifugo" Text="Gerar Vermífugo:" Foreground="White"/>
+                    <TextBlock x:Name="txtVeriVermifugo" Text="Verificar Vermífugo:" Foreground="White"/>
+                    <Button x:Name="vrfcVermifugo" Content="Verificar" Width="125" Height="25" Click="vrfcVermifugo_Click" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="0" Grid.Column="3" Orientation="Vertical" Margin="5,5,5,5" VerticalAlignment="Center">
+                    <TextBlock x:Name="lblGerarRacao" Text="Gerar Ração:" Foreground="White"/>
+                    <TextBlock x:Name="txtVeriRacao" Text="Verificar Ração:" Foreground="White"/>
+                    <Button x:Name="vrfcRacao" Content="Verificar" Width="110" Height="25" Click="vrfcRacao_Click" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <!-- Linha 2 -->
+                <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" Margin="5,5,5,5" VerticalAlignment="Center">
+                    <TextBlock x:Name="lblGerarWelcome" Text="Gerar Welcome:" Foreground="White"/>
+                    <TextBlock x:Name="txtVeriWelcome" Text="Verificar Welcome:" Foreground="White"/>
+                    <Button x:Name="vrfcWelcome" Content="Verificar" Width="151" Height="25" HorizontalAlignment="Left" Click="vrfcWelcome_Click" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" Margin="5,5,5,5" VerticalAlignment="Center">
+                    <TextBlock x:Name="lblGerarVacina" Text="Gerar Vacina:" Foreground="White"/>
+                    <TextBlock x:Name="txtVeriVacina" Text="Verificar Vacina:" Foreground="White"/>
+                    <Button x:Name="vrfcVacina" Content="Verificar" Width="130" Height="25" Click="vrfcVacina_Click" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Vertical" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock x:Name="lblGerarMilteforan" Text="Gerar Milteforan:" Foreground="White"/>
+                    <TextBlock x:Name="txtVeriMilteforan" Text="Verificar Milteforan:" Foreground="White"/>
+                    <Button x:Name="vrfcMilteforan" Content="Verificar" Width="124" Height="25" Click="vrfcMilteforan_Click" Cursor="Hand" Margin="0,5,0,0"/>
+                </StackPanel>
+
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>
