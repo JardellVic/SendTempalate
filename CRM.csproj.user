@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Controls\Ajuda\HelpAntiparasitario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Ajuda\HelpSuplemento.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\AtualizarBanco.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Disparo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\Inicio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\MappingWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelacaoAntiparasitario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelacaoCpP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelacaoMilteforan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelacaoRacao.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelacaoSuplemento.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelacaoVacina.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelacaoVermifugo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelacaoWelcome.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\RelatorioRetorno.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\Ajuda\HelpAntiparasitario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Ajuda\HelpSuplemento.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\AtualizarBanco.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Disparo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\Inicio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\MappingWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelacaoAntiparasitario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelacaoCpP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelacaoMilteforan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelacaoRacao.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelacaoSuplemento.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelacaoVacina.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelacaoVermifugo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelacaoWelcome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\RelatorioRetorno.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
